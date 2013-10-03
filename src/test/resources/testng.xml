@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >  
+<suite name="AllTests" verbose="1" stackTraceOutputMethod="2">
+  <test name="Smoke1">
+    <parameter name="first-name"  value="Cedric"/>
+    <packages>
+      <package name="test.qa.smoke"/>
+    </packages>
+  </test>
+  <test name="Regression1">
+    <parameter name="first-name"  value="Paul"/>
+    <packages>
+      <package name="test.qa.regression"/>
+    </packages>
+  </test>  
+  <test name="Dev1">
+    <parameter name="first-name"  value="Dale"/>
+    <packages>
+      <package name="test.qa.dev"/>
+    </packages>
+  </test>
+</suite>
